@@ -1,0 +1,34 @@
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    border: 1px solid grey;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: scale(1.08); /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+  }
+  
+  /* Active (clicked) effect */
+  .card:active {
+    transform: scale(1); /* Reset to normal scale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow to simulate a click */
+  }
+  .nav-link a {
+    color: white; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Hover effect */
+  .nav-link a:hover {
+    color: brown; /* Change text color on hover */
+    transform: scale(1.12); /* Slightly enlarge the text */
+  }
+  
+  /* Optional: Active link styling */
+  .nav-link a.active {
+    color: orange; /* Highlight active link */
+    font-weight: bold; /* Make it bold */
+  }

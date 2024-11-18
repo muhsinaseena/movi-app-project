@@ -1,0 +1,39 @@
+.detailcontainer{
+    display: flex;
+  flex-direction: row; /* Adjust if needed */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  position: relative;
+  overflow: hidden; /* Prevent content overflow */
+  color: #fff; /* Text color */
+}
+.detailimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure it stays behind content */
+  }
+  
+  .detailcontent {
+    z-index: 1; /* Ensure content appears above background */
+    text-align: center; /* Center the text */
+    padding: 20px;
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  .detailcontent h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .detailcontent p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
